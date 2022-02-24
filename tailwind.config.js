@@ -2,7 +2,7 @@
 
 module.exports = {
   mode: "jit",
-  
+
   content: ["./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
@@ -44,6 +44,9 @@ module.exports = {
           600: "#765F12",
           800: "#3d3209",
         },
+
+        purple: "#2b1e7b",
+        bar: "#b7abc1",
       },
     },
   },

@@ -15,12 +15,12 @@
                   <div class="flex items-center">
                     <span class="sr-only">Tek Jones</span>
                     <img
-                      class="mr-4 h-8 w-auto sm:h-10"
+                      class="mr-4 h-16 w-auto"
                       src="../../public/assets/images/logo-main.png"
                       alt=""
                     />
                     <h6
-                      class="text-primary font-termina text-base font-medium uppercase"
+                      class="text-primary font-termina text-2xl uppercase leading-none"
                     >
                       Tek <br />
                       Jones
@@ -29,10 +29,10 @@
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
                   <PopoverButton
-                    class="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    class="text-primary hover:text-secondary-200 focus:ring-secondary inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset"
                   >
                     <span class="sr-only">Open main menu</span>
-                    <MenuIcon class="h-6 w-6" aria-hidden="true" />
+                    <MenuIcon class="h-8 w-8" aria-hidden="true" />
                   </PopoverButton>
                 </div>
               </div>
@@ -41,14 +41,15 @@
             <div
               class="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end"
             >
-              <div class="hidden md:flex md:space-x-10">
+              <div class="hidden md:flex md:items-center md:space-x-10">
                 <a
                   v-for="item in navigation"
                   :key="item.name"
                   :href="item.href"
-                  class="font-termina font-medium text-gray-500 hover:text-gray-900"
+                  class="font-termina text-bar hover:text-secondary text-2xl"
                   >{{ item.name }}</a
                 >
+                <img src="../../public/assets/images/ellipse.png" alt="" />`
               </div>
             </div>
           </nav>
@@ -82,7 +83,7 @@
                     class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                   >
                     <span class="sr-only">Close menu</span>
-                    <XIcon class="h-6 w-6" aria-hidden="true" />
+                    <XIcon class="h-8 w-8" aria-hidden="true" />
                   </PopoverButton>
                 </div>
               </div>
@@ -105,7 +106,7 @@
           </PopoverPanel>
         </transition>
       </Popover>
-      <div class="bg-secondary-600 h-1 max-w-7xl mx-auto mt-5"></div>
+      <div class="bg-purple mx-auto mt-5 h-1 max-w-7xl"></div>
     </div>
   </div>
 </template>
