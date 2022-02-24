@@ -49,7 +49,7 @@
                   class="font-termina text-bar hover:text-secondary text-2xl"
                   >{{ item.name }}</a
                 >
-                <img src="../../public/assets/images/ellipse.png" alt="" />`
+                <img src="../../public/assets/images/ellipse.png" alt="" />
               </div>
             </div>
           </nav>
