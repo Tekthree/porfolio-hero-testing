@@ -16,7 +16,7 @@
                     <span class="sr-only">Tek Jones</span>
                     <img
                       class="mr-4 h-16 w-auto"
-                      src="../../public/assets/images/logo-main.png"
+                      src="../../public/assets/logo-main.png"
                       alt=""
                     />
                     <h6
@@ -49,7 +49,7 @@
                   class="font-termina text-bar hover:text-secondary text-2xl"
                   >{{ item.name }}</a
                 >
-                <img src="../../public/assets/images/ellipse.png" alt="" />
+                <img src="../../public/assets/ellipse.png" alt="" />
               </div>
             </div>
           </nav>
