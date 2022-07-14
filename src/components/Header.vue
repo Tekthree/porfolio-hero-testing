@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="relative pt-6 pb-16 sm:pb-24">
+    <div class="relative pt-6 ">
       <Popover>
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
           <nav
@@ -106,7 +106,7 @@
           </PopoverPanel>
         </transition>
       </Popover>
-      <div class="bg-purple mx-auto mt-5 h-1 max-w-7xl"></div>
+      
     </div>
   </div>
 </template>

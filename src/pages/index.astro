@@ -2,6 +2,7 @@
 
 import Tour from '../components/Tour.astro';
 import Header from '../components/Header.vue';
+import Arrmeth from '../components/Arrmeth.vue';
 
 let title = 'My Astro Site';
 
@@ -25,12 +26,16 @@ let title = 'My Astro Site';
 			-webkit-text-fill-color: transparent;
 		}
 
-		.hero{
-			background: url('../../assets/hero-pattern.png') center center, url('../../assets/lights.png');
+		.lights{
+			background: url('../../public/assets/lights.png');
 			background-size: cover;
 			background-repeat: no-repeat;
-	
+		}
 
+		.hero{
+			background: url('../../public/assets/hero-pattern.png') center center;
+			background-size: cover;
+			background-repeat: no-repeat;
 		}
 
 
@@ -45,7 +50,7 @@ let title = 'My Astro Site';
 			display: block;
 			width: 100%;
 			height: 100%;
-			background-image: url('../../assets/grain.png');
+			background-image: url('../../public/assets/grain.png');
 			background-position: 0px 0px;
 			background-size: auto;
 			opacity: 0.34;
@@ -61,18 +66,25 @@ let title = 'My Astro Site';
 <div class="design-grain"></div>
 <body>
 	<main class="bg-secondary-800 antialiased">
-	<div class="hero pb-28">
+	<div class="lights">
 		<Header client:visible/>
-		<div class="max-w-7xl mx-auto px-4 sm:px-6">
-				<div class="flex items-center"><h1 class="text-[9vw] xl:text-[118px] leading-none uppercase font-black text-primary font-termina">Creative </h1><div class="pl-[1.8vw]"><img src="../assets/artist-hero.png" alt=""></div>
-			</div>
-				<div class="flex items-center"><div class="pr-[1.5vw] -mt-[2vw]"><img src="../assets/clock-hero.png" alt=""></div><h1 class="text-[9vw] xl:text-[118px] leading-none uppercase font-black text-primary font-termina">developer </h1>
-			</div>
-				<div class="flex items-center mt-[1.8vw]"><h1 class="text-[9vw] xl:text-[118px] leading-none uppercase font-black text-primary font-termina flex items-center"><span class="new-font mr-[1.9vw]">and</span> designer <span class="text-[5.5vw] text-yellow-400">+</span> </h1>
+		<div class="bg-purple mt-8 h-1"></div>
+
+			<!--------------hero----------------->
+			<div class="hero px-4 sm:px-6">
+				<div class="max-w-7xl mx-auto py-20">
+						<div class="flex items-center"><h1 class="text-[9vw] xl:text-[118px] leading-none uppercase font-black text-primary font-termina">Creative </h1><div class="pl-[1.8vw]"><img src="../public/assets/artist-hero.png" alt=""></div>
+					</div>
+						<div class="flex items-center"><div class="pr-[1.5vw] -mt-[2vw]"><img src="../public/assets/clock-hero.png" alt=""></div><h1 class="text-[9vw] xl:text-[118px] leading-none uppercase font-black text-primary font-termina">developer </h1>
+					</div>
+						<div class="flex items-center mt-[1.8vw]"><h1 class="text-[9vw] xl:text-[118px] leading-none uppercase font-black text-primary font-termina flex items-center"><span class="new-font mr-[1.9vw]">and</span> designer <span class="xl:text-[3vw] text-[5vw] text-yellow-400">+</span> </h1>
+					</div>
+				</div>
 			</div>
 
-		
-		</div>
+			<!------------------gif/video-------------------->
+			<div class=""></div>
+	
 	
 	
 	</div>
@@ -82,8 +94,10 @@ let title = 'My Astro Site';
 
 		<Tour />
 
-	
-
+		
+		
+		
 	</main>
+	<Arrmeth/>
 </body>
 </html>
